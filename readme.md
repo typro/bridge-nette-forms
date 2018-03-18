@@ -12,7 +12,7 @@ Integration of [Typro](https://github.com/typro/typro) to [Nette Forms](https://
 composer require typro/bridge-nette-forms
 ```
 
-This package requires PHP 5.4.0 or later, [Typro]() 3.0+ and [Nette\Forms](https://github.com/nette/forms) 2.4+.
+This package requires PHP 5.4.0 or later, [Typro](https://github.com/typro/typro) 3.0+ and [Nette\Forms](https://github.com/nette/forms) 2.4+.
 
 
 ## Usage
