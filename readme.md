@@ -1,5 +1,9 @@
-
 # bridge-nette-forms
+
+[![Build Status](https://github.com/typro/bridge-nette-forms/workflows/Build/badge.svg)](https://github.com/typro/bridge-nette-forms/actions)
+[![Downloads this Month](https://img.shields.io/packagist/dm/typro/bridge-nette-forms.svg)](https://packagist.org/packages/typro/bridge-nette-forms)
+[![Latest Stable Version](https://poser.pugx.org/typro/bridge-nette-forms/v/stable)](https://github.com/typro/bridge-nette-forms/releases)
+[![License](https://img.shields.io/badge/license-New%20BSD-blue.svg)](https://github.com/typro/bridge-nette-forms/blob/master/license.md)
 
 Integration of [Typro](https://github.com/typro/typro) to [Nette Forms](https://github.com/nette/forms).
 
