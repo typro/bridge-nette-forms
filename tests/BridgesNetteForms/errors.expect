@@ -1,32 +1,30 @@
 <form action="" method="post" class="form">
+	<ul class="form__errors">
+		<li class="form__error">First form error</li>
+		<li class="form__error">Second form error</li>
+	</ul>
 
-<ul class="form__errors">
-	<li class="form__error">First form error</li>
+	<div class="form__controls">
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-text">Text</label>
+			</div>
 
-	<li class="form__error">Second form error</li>
-</ul>
+			<div class="form__control">
+				<input type="text" name="text" id="frm-text" class="form__control--text">
+				<div class="form__control__error">
+					<p class="form__control__errorItem">First input error</p>
+					<p class="form__control__errorItem">Second input error</p>
+				</div>
+			</div>
+		</div>
 
+		<div class="form__control-pair">
+			<div class="form__label"></div>
 
-<div class="form__controls">
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-text">Text</label></div>
-
-	<div class="form__control"><input type="text" name="text" id="frm-text" class="form__control--text">
-
-	<div class="form__control__error">
-		<p class="form__control__errorItem">First input error</p>
-
-		<p class="form__control__errorItem">Second input error</p>
+			<div class="form__control">
+				<input type="submit" name="_submit" value="Submit" class="button">
+			</div>
+		</div>
 	</div>
-</div>
-</div>
-
-<div class="form__control-pair">
-	<div class="form__label"></div>
-
-	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
-</div>
-</div>
-
-<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
 </form>

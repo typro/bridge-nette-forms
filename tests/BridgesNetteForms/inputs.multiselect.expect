@@ -1,42 +1,64 @@
 <form action="" method="post" class="form">
+	<div class="form__controls">
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-default">MultiSelect</label>
+			</div>
 
-<div class="form__controls">
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-default">MultiSelect</label></div>
+			<div class="form__control">
+				<select name="default[]" id="frm-default" multiple></select>
+			</div>
+		</div>
 
-	<div class="form__control"><select name="default[]" id="frm-default" multiple></select></div>
-</div>
+		<div class="form__control-pair form__control-pair--required">
+			<div class="form__label">
+				<label for="frm-required" class="form__control--required">MultiSelect required</label>
+			</div>
 
-<div class="form__control-pair form__control-pair--required">
-	<div class="form__label"><label for="frm-required" class="form__control--required">MultiSelect required</label></div>
+			<div class="form__control">
+				<select name="required[]" id="frm-required" required multiple></select>
+			</div>
+		</div>
 
-	<div class="form__control"><select name="required[]" id="frm-required" required data-nette-rules='[{"op":":filled","msg":"This field is required."}]' multiple></select></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-noLabel"></label>
+			</div>
 
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-noLabel"></label></div>
+			<div class="form__control">
+				<select name="noLabel[]" id="frm-noLabel" multiple></select>
+			</div>
+		</div>
 
-	<div class="form__control"><select name="noLabel[]" id="frm-noLabel" multiple></select></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-withItems">MultiSelect with items</label>
+			</div>
 
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-withItems">MultiSelect with items</label></div>
+			<div class="form__control">
+				<select name="withItems[]" id="frm-withItems" multiple>
+					<option value="a">Item A</option>
+					<option value="b">Item B</option>
+				</select>
+			</div>
+		</div>
 
-	<div class="form__control"><select name="withItems[]" id="frm-withItems" multiple><option value="a">Item A</option><option value="b">Item B</option></select></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-withSize">MultiSelect with items</label>
+			</div>
 
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-withSize">MultiSelect with items</label></div>
+			<div class="form__control">
+				<select name="withSize[]" size="2" id="frm-withSize" multiple></select>
+			</div>
+		</div>
 
-	<div class="form__control"><select name="withSize[]" size="2" id="frm-withSize" multiple></select></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label"></div>
 
-<div class="form__control-pair">
-	<div class="form__label"></div>
-
-	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
-</div>
-</div>
-
-<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+			<div class="form__control">
+				<input type="submit" name="_submit" value="Submit" class="button">
+			</div>
+		</div>
+	</div>
 </form>

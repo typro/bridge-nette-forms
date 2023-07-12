@@ -1,24 +1,31 @@
 <form action="" method="post" class="form">
+	<div class="form__controls">
+		<div class="form__control-pair">
+			<div class="form__label"></div>
 
-<div class="form__controls">
-<div class="form__control-pair">
-	<div class="form__label"></div>
+			<div class="form__control">
+				<input type="submit" name="first" value="First" class="button">
+			</div>
+		</div>
 
-	<div class="form__control"><input type="submit" name="first" value="First" class="button"></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-text">Text</label>
+			</div>
 
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-text">Text</label></div>
+			<div class="form__control">
+				<input type="text" name="text" id="frm-text" class="form__control--text">
+			</div>
+		</div>
 
-	<div class="form__control"><input type="text" name="text" id="frm-text" class="form__control--text"></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label"></div>
 
-<div class="form__control-pair">
-	<div class="form__label"></div>
-
-	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"> <input type="button" name="button" value="Button" class="button"> <input type="image" name="image[]" src="Image" alt="http://example.com/image.jpg" class="imagebutton"></div>
-</div>
-</div>
-
-<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+			<div class="form__control">
+				<input type="submit" name="_submit" value="Submit" class="button">
+				<input type="button" name="button" value="Button" class="button">
+				<input type="image" name="image[]" src="Image" alt="http://example.com/image.jpg" class="imagebutton">
+			</div>
+		</div>
+	</div>
 </form>

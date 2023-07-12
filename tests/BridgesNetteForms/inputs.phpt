@@ -22,7 +22,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.text.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.text.expect', $form->__toString(TRUE));
 });
 
 
@@ -43,7 +43,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.password.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.password.expect', $form->__toString(TRUE));
 });
 
 
@@ -64,7 +64,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.textarea.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.textarea.expect', $form->__toString(TRUE));
 });
 
 
@@ -81,7 +81,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.email.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.email.expect', $form->__toString(TRUE));
 });
 
 
@@ -98,7 +98,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.integer.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.integer.expect', $form->__toString(TRUE));
 });
 
 
@@ -113,11 +113,9 @@ test(function () {
 
 	$form->addUpload('noLabel');
 
-	$form->addUpload('multiple', 'Upload multiple', TRUE);
-
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.upload.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.upload.expect', $form->__toString(TRUE));
 });
 
 
@@ -134,7 +132,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.multiupload.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.multiupload.expect', $form->__toString(TRUE));
 });
 
 
@@ -151,7 +149,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.hidden.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.hidden.expect', $form->__toString(TRUE));
 });
 
 
@@ -168,7 +166,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.checkbox.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.checkbox.expect', $form->__toString(TRUE));
 });
 
 
@@ -190,7 +188,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.radiolist.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.radiolist.expect', $form->__toString(TRUE));
 });
 
 
@@ -212,7 +210,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.checkboxlist.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.checkboxlist.expect', $form->__toString(TRUE));
 });
 
 
@@ -236,7 +234,7 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.select.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.select.expect', $form->__toString(TRUE));
 });
 
 
@@ -260,5 +258,5 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/inputs.multiselect.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/inputs.multiselect.expect', $form->__toString(TRUE));
 });

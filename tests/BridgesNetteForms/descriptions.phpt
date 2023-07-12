@@ -14,5 +14,5 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/descriptions.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/descriptions.expect', $form->__toString(TRUE));
 });

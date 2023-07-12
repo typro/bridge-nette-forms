@@ -19,5 +19,5 @@ test(function () {
 
 	$form->addImage('image', 'Image', 'http://example.com/image.jpg', 'Alternative description');
 
-	Assert::matchFile(__DIR__ . '/buttons.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/buttons.expect', $form->__toString(TRUE));
 });

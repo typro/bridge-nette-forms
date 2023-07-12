@@ -1,30 +1,41 @@
 <form action="" method="post" class="form" enctype="multipart/form-data">
+	<div class="form__controls">
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-default">MultiUpload</label>
+			</div>
 
-<div class="form__controls">
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-default">MultiUpload</label></div>
+			<div class="form__control">
+				<input type="file" name="default[]" multiple id="frm-default" class="form__control--text">
+			</div>
+		</div>
 
-	<div class="form__control"><input type="file" name="default[]" multiple id="frm-default" class="form__control--text"></div>
-</div>
+		<div class="form__control-pair form__control-pair--required">
+			<div class="form__label">
+				<label for="frm-required" class="form__control--required">MultiUpload required</label>
+			</div>
 
-<div class="form__control-pair form__control-pair--required">
-	<div class="form__label"><label for="frm-required" class="form__control--required">MultiUpload required</label></div>
+			<div class="form__control">
+				<input type="file" name="required[]" multiple id="frm-required" required class="form__control--text">
+			</div>
+		</div>
 
-	<div class="form__control"><input type="file" name="required[]" multiple id="frm-required" required data-nette-rules='[{"op":":filled","msg":"This field is required."}]' class="form__control--text"></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-noLabel"></label>
+			</div>
 
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-noLabel"></label></div>
+			<div class="form__control">
+				<input type="file" name="noLabel[]" multiple id="frm-noLabel" class="form__control--text">
+			</div>
+		</div>
 
-	<div class="form__control"><input type="file" name="noLabel[]" multiple id="frm-noLabel" class="form__control--text"></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label"></div>
 
-<div class="form__control-pair">
-	<div class="form__label"></div>
-
-	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
-</div>
-</div>
-
-<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+			<div class="form__control">
+				<input type="submit" name="_submit" value="Submit" class="button">
+			</div>
+		</div>
+	</div>
 </form>

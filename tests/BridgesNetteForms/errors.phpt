@@ -19,5 +19,5 @@ test(function () {
 	$textInput->addError('First input error');
 	$textInput->addError('Second input error');
 
-	Assert::matchFile(__DIR__ . '/errors.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/errors.expect', $form->__toString(TRUE));
 });

@@ -28,5 +28,5 @@ test(function () {
 
 	$form->addSubmit('submit', 'Submit');
 
-	Assert::matchFile(__DIR__ . '/groups.expect', $form->__toString(TRUE));
+	Tests::match(__DIR__ . '/groups.expect', $form->__toString(TRUE));
 });

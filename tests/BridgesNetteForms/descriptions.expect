@@ -1,18 +1,22 @@
 <form action="" method="post" class="form">
+	<div class="form__controls">
+		<div class="form__control-pair">
+			<div class="form__label">
+				<label for="frm-text">Text</label>
+			</div>
 
-<div class="form__controls">
-<div class="form__control-pair">
-	<div class="form__label"><label for="frm-text">Text</label></div>
+			<div class="form__control">
+				<input type="text" name="text" id="frm-text" class="form__control--text">
+				<small class="form__control__description">Some input description</small>
+			</div>
+		</div>
 
-	<div class="form__control"><input type="text" name="text" id="frm-text" class="form__control--text"> <small class="form__control__description">Some input description</small></div>
-</div>
+		<div class="form__control-pair">
+			<div class="form__label"></div>
 
-<div class="form__control-pair">
-	<div class="form__label"></div>
-
-	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
-</div>
-</div>
-
-<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+			<div class="form__control">
+				<input type="submit" name="_submit" value="Submit" class="button">
+			</div>
+		</div>
+	</div>
 </form>
