@@ -14,9 +14,9 @@
 	<div class="form__control"><input type="text" name="text" id="frm-text" class="form__control--text">
 
 	<div class="form__control__error">
-		First input error
+		<p class="form__control__errorItem">First input error</p>
 
-		Second input error
+		<p class="form__control__errorItem">Second input error</p>
 	</div>
 </div>
 </div>

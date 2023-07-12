@@ -36,6 +36,7 @@
 			$renderer->wrappers['control']['container'] = 'div class=form__control';
 			$renderer->wrappers['control']['description'] = 'small class=form__control__description';
 			$renderer->wrappers['control']['errorcontainer'] = 'div class=form__control__error';
+			$renderer->wrappers['control']['erroritem'] = 'p class=form__control__errorItem';
 
 			$renderer->wrappers['control']['.required'] = 'form__control--required';
 			$renderer->wrappers['control']['.text'] = 'form__control--text';
