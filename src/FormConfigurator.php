@@ -3,6 +3,7 @@
 	namespace Typro\Bridges\NetteForms;
 
 	use Nette\Forms\Form;
+	use Nette\Forms\Rendering\DefaultFormRenderer;
 
 
 	class FormConfigurator
@@ -15,6 +16,10 @@
 			$form->getElementPrototype()->class[] = 'form';
 
 			$renderer = $form->getRenderer();
+
+			if (!($renderer instanceof DefaultFormRenderer)) {
+				throw new \RuntimeException('Unsupported renderer ' . get_class($renderer) . ', supports only DefaultFormRenderer.');
+			}
 
 			$renderer->wrappers['error']['container'] = 'ul class=form__errors';
 			$renderer->wrappers['error']['item'] = 'li class=form__error';

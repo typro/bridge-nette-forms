@@ -22,6 +22,11 @@
 	"require-dev": {
 		"nette/tester": "^1.7"
 	},
+	"extra": {
+		"phpstan-extensions": [
+			"phpstan/phpstan-nette"
+		]
+	},
 	"suggest": {
 		"typro/typro": "Typro installable via Composer."
 	}
