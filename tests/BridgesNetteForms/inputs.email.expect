@@ -1,0 +1,29 @@
+<form action="" method="post" class="form">
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-default">Email</label></div>
+
+	<div class="form__control"><input type="email" name="default" id="frm-default" data-nette-rules='[{"op":"optional"},{"op":":email","msg":"Please enter a valid email address."}]' class="form__control--text"></div>
+</div>
+
+<div class="form__control-pair form__control-pair--required">
+	<div class="form__label"><label for="frm-required" class="form__control--required">Email required</label></div>
+
+	<div class="form__control"><input type="email" name="required" id="frm-required" required data-nette-rules='[{"op":":filled","msg":"This field is required."},{"op":":email","msg":"Please enter a valid email address."}]' class="form__control--text"></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-noLabel"></label></div>
+
+	<div class="form__control"><input type="email" name="noLabel" id="frm-noLabel" data-nette-rules='[{"op":"optional"},{"op":":email","msg":"Please enter a valid email address."}]' class="form__control--text"></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
+</div>
+</div>
+
+</form>

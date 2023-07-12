@@ -1,0 +1,12 @@
+<form action="" method="post" class="form">
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
+</div>
+</div>
+
+<input type="hidden" name="default" value=""><input type="hidden" name="required" value=""><input type="hidden" name="withDefaultValue" value="defaultValue"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>

@@ -1,0 +1,30 @@
+<form action="" method="post" class="form">
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><label for="frm-default"><input type="checkbox" name="default" id="frm-default">Checkbox</label></div>
+</div>
+
+<div class="form__control-pair form__control-pair--required">
+	<div class="form__label"></div>
+
+	<div class="form__control"><label for="frm-required"><input type="checkbox" name="required" id="frm-required" required data-nette-rules='[{"op":":filled","msg":"This field is required."}]'>Checkbox required</label></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><label for="frm-noLabel"><input type="checkbox" name="noLabel" id="frm-noLabel"></label></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
+</div>
+</div>
+
+<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>

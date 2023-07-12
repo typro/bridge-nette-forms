@@ -1,0 +1,58 @@
+<form action="" method="post" class="form">
+
+<fieldset class="form__group">
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-a1">Text A in noname group</label></div>
+
+	<div class="form__control"><input type="text" name="a1" id="frm-a1" class="form__control--text"></div>
+</div>
+</div>
+</fieldset>
+
+<fieldset class="form__group">
+<legend class="form__group__label">Group B</legend>
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-b1">Text A in Group B</label></div>
+
+	<div class="form__control"><input type="text" name="b1" id="frm-b1" class="form__control--text"></div>
+</div>
+</div>
+</fieldset>
+
+<fieldset class="form__group">
+<legend class="form__group__label">Group C</legend>
+<p class="form__group__description">Group C description</p>
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-c1">Text A in Group C</label></div>
+
+	<div class="form__control"><input type="text" name="c1" id="frm-c1" class="form__control--text"></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
+</div>
+</div>
+</fieldset>
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-a">Text A</label></div>
+
+	<div class="form__control"><input type="text" name="a" id="frm-a" class="form__control--text"></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-b">Text B</label></div>
+
+	<div class="form__control"><input type="text" name="b" id="frm-b" class="form__control--text"></div>
+</div>
+</div>
+
+</form>

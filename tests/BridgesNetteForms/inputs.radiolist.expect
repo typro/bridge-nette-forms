@@ -1,0 +1,36 @@
+<form action="" method="post" class="form">
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"><label>RadioList</label></div>
+
+	<div class="form__control"></div>
+</div>
+
+<div class="form__control-pair form__control-pair--required">
+	<div class="form__label"><label class="form__control--required">RadioList required</label></div>
+
+	<div class="form__control"></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"><label></label></div>
+
+	<div class="form__control"></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"><label>RadioList with items</label></div>
+
+	<div class="form__control"><label><input type="radio" name="withItems" value="a">Item A</label><br><label><input type="radio" name="withItems" value="b">Item B</label></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
+</div>
+</div>
+
+<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>

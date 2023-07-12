@@ -1,0 +1,42 @@
+<form action="" method="post" class="form">
+
+<div class="form__controls">
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-default">TextArea</label></div>
+
+	<div class="form__control"><textarea name="default" id="frm-default"></textarea></div>
+</div>
+
+<div class="form__control-pair form__control-pair--required">
+	<div class="form__label"><label for="frm-required" class="form__control--required">TextArea required</label></div>
+
+	<div class="form__control"><textarea name="required" id="frm-required" required data-nette-rules='[{"op":":filled","msg":"This field is required."}]'></textarea></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-noLabel"></label></div>
+
+	<div class="form__control"><textarea name="noLabel" id="frm-noLabel"></textarea></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-cols">TextArea with cols</label></div>
+
+	<div class="form__control"><textarea name="cols" cols="10" id="frm-cols"></textarea></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"><label for="frm-rows">TextArea with rows</label></div>
+
+	<div class="form__control"><textarea name="rows" rows="20" id="frm-rows"></textarea></div>
+</div>
+
+<div class="form__control-pair">
+	<div class="form__label"></div>
+
+	<div class="form__control"><input type="submit" name="_submit" value="Submit" class="button"></div>
+</div>
+</div>
+
+<!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>
