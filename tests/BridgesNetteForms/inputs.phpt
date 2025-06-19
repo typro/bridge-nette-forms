@@ -74,12 +74,15 @@ test(function () {
 	$form = new Nette\Forms\Form;
 	Typro\Bridges\NetteForms\FormConfigurator::configure($form);
 
-	$form->addEmail('default', 'Email');
+	$form->addEmail('default', 'Email')
+		->getControlPrototype()->maxlength = NULL;
 
 	$form->addEmail('required', 'Email required')
-		->setRequired();
+		->setRequired()
+		->getControlPrototype()->maxlength = NULL;
 
-	$form->addEmail('noLabel');
+	$form->addEmail('noLabel')
+		->getControlPrototype()->maxlength = NULL;
 
 	$form->addSubmit('submit', 'Submit');
 
